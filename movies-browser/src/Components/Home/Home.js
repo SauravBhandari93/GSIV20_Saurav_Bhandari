@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { API_URL, API_KEY, IMAGE_BASE_URL, POSTER_SIZE } from "../../config";
-import SearchBar from "../SearchBar/SearchBar";
+import SearchBar from "../Elements/SearchBar/SearchBar";
 import LoadMoreBtn from "../Elements/LoadMoreBtn/LoadMoreBtn";
 import Spinner from "../Elements/Spinner/Spinner";
-import MovieThumb from "../MovieThumb/MovieThumb";
+import MovieThumb from "../Elements/MovieThumb/MovieThumb";
 import "./Home.css";
 
 class Home extends Component {
