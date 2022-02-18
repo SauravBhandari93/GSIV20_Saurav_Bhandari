@@ -5,7 +5,7 @@ import App from "./Components/App/App";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <BrowserRouter basename="/ReacMovieDB">
+  <BrowserRouter basename="/ReactMovieDB">
     <App />
   </BrowserRouter>,
   document.getElementById("root")
