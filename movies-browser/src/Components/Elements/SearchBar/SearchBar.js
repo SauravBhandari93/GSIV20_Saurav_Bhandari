@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./SearchBar.css";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import HomeSharpIcon from "@mui/icons-material/HomeSharp";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 let timeout = null;
 
@@ -30,9 +30,9 @@ function SearchBar(props) {
             value={state}
           />
         </div>
-        <Link to="/">
-          <HomeSharpIcon className="HomeSharpIcon" sx={{ fontSize: 30 }} />
-        </Link>
+        {/* <Link to="/"> */}
+        <HomeSharpIcon className="HomeSharpIcon" sx={{ fontSize: 30 }} />
+        {/* </Link> */}
       </div>
     </>
   );
