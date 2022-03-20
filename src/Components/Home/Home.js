@@ -18,7 +18,7 @@ class Home extends Component {
 
   componentDidMount() {
     this.setState({ loading: true });
-    const endpoint = `${API_URL}discover/movie?api_key=${API_KEY}&language=en-US&page=1&sort_by=primary_release_date.asec&primary_release_date.gte=2022-02-17`;
+    const endpoint = `${API_URL}discover/movie?api_key=${API_KEY}&language=en-US&page=1`;
     this.fetchItems(endpoint);
   }
 
@@ -31,7 +31,7 @@ class Home extends Component {
     });
 
     if (searchTerm === "") {
-      endpoint = `${API_URL}discover/movie?api_key=${API_KEY}&language=en-US&page=1&sort_by=primary_release_date.asec&primary_release_date.gte=2022-02-17`;
+      endpoint = `${API_URL}discover/movie?api_key=${API_KEY}&language=en-US&page=1`;
     } else {
       endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${searchTerm}`;
     }
@@ -45,7 +45,7 @@ class Home extends Component {
     if (this.state.searchTerm === "") {
       endpoint = `${API_URL}discover/movie?api_key=${API_KEY}&language=en-US&page=${
         this.state.currentPage + 1
-      }&sort_by=primary_release_date.asec&primary_release_date.gte=2022-02-17`;
+      }`;
     } else {
       endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${
         this.state.searchTerm
